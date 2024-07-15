@@ -1,0 +1,141 @@
+/* styles.css */
+
+/* Define color variables */
+:root {
+    --primary-color: #2a8812;
+    --secondary-color: #47f51b;
+    --background-color: #040803;
+    --text-color: #e5f0e2;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+nav {
+  background-color: var(--primary-color);
+  padding: 1em;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+section {
+  padding: 2em;
+  background-color: var(--background-color);
+  border-bottom: 1px solid var(--primary-color);
+}
+
+h1, h2, h3 {
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+  font-size: 3.4em;
+}
+
+p {
+  font-size: 23px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  box-shadow: 0px 0px 10px var(--secondary-color);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+#home {
+  background-image: linear-gradient(to bottom, var(--secondary-color), #246a11);
+  background-size: 100% 300px;
+  background-position: 0% 100%;
+  transition: background-position 0.5s ease-out;
+}
+
+#home:hover {
+  background-position: 100% 100%;
+}
+
+#about img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+#projects ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+#projects li {
+    margin: 29px;
+    width: calc(33.33% - 126px);
+    font-size: 56px;
+}
+
+#projects img {
+  height: 159px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#contact ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#contact li {
+  margin-right: 20px;
+}
+
+#contact a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+#contact a:hover {
+  color: var(--secondary-color);
+}
