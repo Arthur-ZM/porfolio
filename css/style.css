@@ -51,6 +51,9 @@ section {
   padding: 2em;
   background-color: var(--background-color);
   border-bottom: 1px solid var(--primary-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 h1, h2, h3 {
@@ -87,6 +90,10 @@ button:hover {
 
 #home:hover {
   background-position: 100% 100%;
+}
+
+#about {
+  text-align: center;
 }
 
 #about img {
