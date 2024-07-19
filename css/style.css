@@ -2,6 +2,7 @@
 
 /* Define color variables */
 :root {
+    --nav-color: #2a8812a8;
     --primary-color: #2a8812;
     --secondary-color: #47f51b;
     --background-color: #040803;
@@ -18,14 +19,19 @@ body {
 }
 
 nav {
-  background-color: var(--primary-color);
+  background-color: var(--nav-color);
   padding: 1em;
   text-align: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  backdrop-filter: blur(10px);
 }
 
 nav ul {
   list-style: none;
   margin: 0;
+  margin-right: 16px;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -80,6 +86,13 @@ button {
 button:hover {
   background-color: var(--secondary-color);
   color: var(--primary-color);
+  animation: glitch 600ms infinite cubic-bezier(.5, -0.25, .75, 1);
+}
+
+@keyframes glitch {
+  50% {
+    transform: skew(180deg);
+  }
 }
 
 #home {
@@ -104,7 +117,7 @@ button:hover {
   margin: 20px;
 }
 
-#projects ul {
+#skills ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -114,13 +127,13 @@ button:hover {
   margin-top: 60px;
 }
 
-#projects li {
+#skills li {
     margin: 29px;
     width: calc(33.33% - 126px);
     font-size: 56px;
 }
 
-#projects img {
+#skills img {
   height: 159px;
   object-fit: contain;
   border-radius: 10px;
@@ -146,4 +159,33 @@ button:hover {
 
 #contact a:hover {
   color: var(--secondary-color);
+}
+
+@media screen and (max-width: 800px) {
+  h1, h2, h3 {
+    font-size: 2.08em;
+    width: max-content;
+  }
+
+  #skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-top: 13px;
+    flex-direction: column;
+  }
+
+  #skills li {
+    margin-left: 105px;
+  }
+
+  #git {
+    margin-left: -56px;
+    padding-left: 40px;
+  }
+
+  #contact ul {
+    margin-top: 42px;
+    margin-bottom: 26px;
+  }
 }
