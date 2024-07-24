@@ -9,7 +9,16 @@
     --text-color: #e5f0e2;
 }
 
-/*main*/
+h1, h2, h3 {
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+  font-size: 3.4em;
+}
+
+p {
+  font-size: 23px;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
@@ -63,16 +72,6 @@ section {
   flex-direction: column;
 }
 
-h1, h2, h3 {
-  color: var(--secondary-color);
-  margin-bottom: 10px;
-  font-size: 3.4em;
-}
-
-p {
-  font-size: 23px;
-}
-
 button {
   background-color: var(--primary-color);
   color: var(--text-color);
@@ -80,7 +79,7 @@ button {
   height: 40px;
   border-radius: 5px;
   padding: 10px 25px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   background: transparent;
   cursor: pointer;
@@ -189,6 +188,71 @@ button:hover:after{
 
 #contact a:hover {
   color: var(--secondary-color);
+}
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--background-color);
+  padding: 20px;
+  border: 1px solid var(--primary-color);
+  display: none;
+  width: 500px;
+}
+
+#popup section {
+  padding: 2em;
+  background-color: var(--background-color);
+  border: 1px solid var(--primary-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#popup h1, h2, h3 {
+  padding-bottom: 10px;
+  font-size: 2.4em;
+}
+
+#popup ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#popup li {
+  margin-right: 20px;
+}
+
+#popup a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+#popup a:hover {
+  color: var(--secondary-color);
+}
+
+.close-btn {
+  position: absolute;
+  top: 22px;
+  right: 23px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #47f51b;
+}
+
+.close-btn:after {
+  right: inherit;
+  top: 33px;
+  left: 0px;
+  bottom: 0px;
 }
 
 @media screen and (max-width: 800px) {

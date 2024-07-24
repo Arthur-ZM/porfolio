@@ -38,3 +38,14 @@ document.querySelectorAll('nav a').forEach((link) => {
       });
     });
   });
+
+
+//popup
+document.getElementById('resume-link').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.getElementById('popup').style.display = 'block';
+});
+
+document.getElementById('close-popup').addEventListener('click', function() {
+  document.getElementById('popup').style.display = 'none';
+});
