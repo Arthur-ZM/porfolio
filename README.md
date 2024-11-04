@@ -23,9 +23,8 @@ This website is a simple portfolio that showcases my skills and experience. It's
 To view my resume, simply click on the "Resume" button on the Contact Me page. A popup will appear with links to download my resume in English and Portuguese.
 
 ### Contact Information
-[I'm an inline-style link with title](https://www.somewebsite.com "somewebsite's Homepage")
 - [LinkedIn](https://www.linkedin.com/in/arthur-zanini-marzagao-a42122304/ "LinkedIn")
 - [GitHub](https://github.com/Arthur-ZM "GitHub") 
 - [Email](mailto:arthurzmarzagao@gmail.com "Email")
 
-That's it! I hope you find my portfolio website helpful. If you have any questions or feedback, feel free to reach out to me through the Contact Me page.
+That's it! I hope you find my portfolio website helpful. If you have any questions, jobs that might intrest me or feedback, feel free to reach out to me through my email.
